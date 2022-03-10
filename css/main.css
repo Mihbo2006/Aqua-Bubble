@@ -32,8 +32,11 @@ nav > a{
 }
 nav > a:hover{
     transition: 0.4s;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#current{
+    color: rgb(106, 255, 230);
 }
 body{
     background: linear-gradient(rgb(0, 102, 255),rgb(0, 12, 80));
@@ -106,7 +109,12 @@ main{
     background: linear-gradient(rgb(0, 153, 255),rgb(0, 89, 148));
     box-shadow: 0 2px 5px rgb(2, 0, 109);
     border-radius: 50px;
-    transition: all 0.4s;
+    transition: all 0.8s;
+    z-index: -1;
+}
+.product:hover{
+    transform: scale(1.1);
+    background: linear-gradient(rgb(55, 175, 255),rgb(0, 64, 107));
 }
 .product img{
     border-radius: 50px;
@@ -149,44 +157,24 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    background-image: url("../Images/UI/Footer.png");
+    background-size: contain;
+    z-index: 9999;
+}
+footer div{
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
-footer > div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-}
-footer span{
-    color: white;
-}
-footer > div > a{
-    margin: 10px;
+footer a{
     transition: all 0.4s;
 }
-footer > div > a:hover{
-    animation: footerA 1s ease-in;
+footer a:hover{
+    filter: brightness(1.2);
 }
-@keyframes footerA{
-    0%{
-        transform: translateY(0);
-    }
-    30%{
-        transform: translateY(-10px);
-    }
-    60%{
-        transform: translateY(0);
-    }
-    70%{
-        transform: translateY(-5px);
-    }
-    80%{
-        transform: translateY(0);
-    }
-    85%{
-        transform: translateY(-3px);
-    }
-    90%{
-        transform: translateY(0);
-    }
+footer a{
+    color: rgb(61, 40, 0);
+    font-family: Comic Sans MS, sans-serif;
 }

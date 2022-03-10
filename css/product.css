@@ -1,0 +1,23 @@
+#buy{
+    padding: 10px;
+    position: fixed;
+    color: white;
+    background-image: url("../Images/UI/BuyButton.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#buy h4{
+    margin: 5px;
+    font-size: 30px;
+}
+#buy span{
+    font-style: italic;
+}
+#sidebar{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
