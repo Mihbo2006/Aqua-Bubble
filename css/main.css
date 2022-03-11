@@ -152,6 +152,61 @@ main{
     position: absolute;
     z-index: 3;
 }
+.popupBG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(4, 0, 253, 0.5),rgba(0, 126, 245, 0.5));
+    backdrop-filter: blur(20px);
+}
+.popup{
+    top: 35%;
+    left: 35%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    width: 30%;
+    color: white;
+    background: linear-gradient(rgb(0, 153, 255),rgb(0, 89, 148));
+    box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+.popup h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.popup > input{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: linear-gradient(rgb(0, 102, 255),rgb(0, 12, 80));
+    box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.popup > input[type="button"]{
+    background-image: url("../Images/UI/Button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s;
+}
+#close{
+    position: absolute;
+    top: 0.01px;
+    right: 1px;
+    background: linear-gradient(rgb(201, 0, 0),rgb(105, 0, 0));
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+#close:hover{
+    background: linear-gradient(rgb(105, 0, 0),rgb(201, 0, 0));
+}
+.popup > input[type="button"]:hover{
+    background-image: url("../Images/UI/ButtonHover.png");
+}
 footer{
     margin-top: 200px;
     display: flex;

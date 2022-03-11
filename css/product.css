@@ -1,13 +1,52 @@
+#mainInfo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+#mainInfo img{
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgb(2, 0, 109);
+}
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#description h1{
+    margin: 20px;
+}
+#description p{
+    margin: 20px;
+    font-size: 20px;
+}
+#description p a{
+    color: rgb(0, 225, 255);
+    text-decoration: underline;
+}
+#description p a:hover{
+    color: rgb(0, 255, 128);
+}
 #buy{
+    margin: 10px;
     padding: 10px;
-    position: fixed;
+    display: flex;
+    flex-direction: row;
     color: white;
     background-image: url("../Images/UI/BuyButton.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
+    box-shadow: 0 2px 5px rgb(2, 0, 109);
+    transition: all 0.4s;
+}
+#buy:hover{
+    background-image: url("../Images/UI/BuyButtonHover.jpg");
+    box-shadow: 0 2px 15px rgb(2, 0, 109);
 }
 #buy h4{
     margin: 5px;
@@ -15,9 +54,4 @@
 }
 #buy span{
     font-style: italic;
-}
-#sidebar{
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
 }
