@@ -5,19 +5,30 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/product.css">
         <link rel="icon" type="image/x-icon" href="./Images/UI/Favicon.ico">
-        <title>Buy Hightower</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <title>Buy Bag</title>
     </head>
     <body>
         <div class="popupBG">
+            <img src="./Images/Aqua.png" title="What a wonderful world!" id="Aqua">
             <div class="popup">
-                <input type="button" value="X" id="close">
+                <input type="button" value="X" class="close">
                 <h3>Buy</h3>
                 <input type="text" placeholder="E-mail" title="Put your e-mail here" required>
                 <input type="text" placeholder="Phone number" title="Put your number here" required>
                 <input type="text" placeholder="Adreess" title="Put your adreess here" required>
-                <input type="button" value="Order">
+                <input type="submit" value="Order" id="buyPopup">
             </div>
         </div>
+        <script>
+            $('#buy').click(function(e) {
+                $('.popupBG').css({'display': 'flex'});
+                $('.popupBG').fadeIn(400);
+            });
+            $('.close').click(function() {
+                $('.popupBG').fadeOut(400);
+            });
+        </script>
         <header>
             <nav>
                 <img src="./Images/UI/Logo.png" alt="Aqua-Bubble" width="90" height="90">
@@ -38,6 +49,8 @@
                     <p>
                         This aquarium it's to easy to carry everywhere. Aquarium include armored glass, filter, 
                         and lightning, so, now can not to be afraid of breaking glass.
+                        Power: 60V
+                        Volume: 15L
                     </p>
                     <a href="" id="buy">
                         <h4>Buy</h4>
