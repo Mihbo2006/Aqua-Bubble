@@ -20,15 +20,6 @@
                 <input type="submit" value="Order" id="buyPopup">
             </div>
         </div>
-        <script>
-            $('#buy').click(function(e) {
-                $('.popupBG').css({'display': 'flex'});
-                $('.popupBG').fadeIn(400);
-            });
-            $('.close').click(function() {
-                $('.popupBG').fadeOut(400);
-            });
-        </script>
         <header>
             <nav>
                 <img src="./Images/UI/Logo.png" alt="Aqua-Bubble" width="90" height="90">
@@ -70,6 +61,16 @@
                     </a>
                 </div>
             </div>
+            <script>
+                $('#buy').click(function(e) {
+                    e.preventDefault();
+                    $('.popupBG').css({'display': 'flex'});
+                    $('.popupBG').fadeIn(400);
+                });
+                $('.close').click(function() {
+                    $('.popupBG').fadeOut(400);
+                });
+            </script>
         </main>
         <footer>
             <div>

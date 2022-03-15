@@ -54,6 +54,16 @@
                     </div>
                 </a>
             </div>
+            <script>
+                $('#buy').click(function(e) {
+                    e.preventDefault();
+                    $('.popupBG').css({'display': 'flex'});
+                    $('.popupBG').fadeIn(400);
+                });
+                $('.close').click(function() {
+                    $('.popupBG').fadeOut(400);
+                });
+            </script>
         </main>
         <footer id="footer">
             <div>
