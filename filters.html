@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="icon" type="image/x-icon" href="./Images/UI/Favicon.ico">
-        <title>Filters</title>
+        <title>Buy filters</title>
     </head>
     <body>
         <header>
@@ -23,7 +23,7 @@
             <div>
                 <h3>Filters</h3>
             </div>
-            <video src="./Images/Bubbles.mp4" autoplay muted></video>
+            <video src="./Images/Bubbles.mp4" autoplay loop muted></video>
         </div>
         <main>
             <div id="background-wrap">
@@ -54,16 +54,6 @@
                     </div>
                 </a>
             </div>
-            <script>
-                $('#buy').click(function(e) {
-                    e.preventDefault();
-                    $('.popupBG').css({'display': 'flex'});
-                    $('.popupBG').fadeIn(400);
-                });
-                $('.close').click(function() {
-                    $('.popupBG').fadeOut(400);
-                });
-            </script>
         </main>
         <footer id="footer">
             <div>
